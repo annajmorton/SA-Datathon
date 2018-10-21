@@ -1,0 +1,71 @@
+#menu {
+
+    margin: 0;
+    padding: 0;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#mnavbar {
+	position: absolute;
+    margin: 1.5% 0 0 1.5%;
+    padding: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	background: transparent;
+	z-index: 2010;
+}
+
+.menu-slide {
+    -webkit-transform: translateX(-250px);
+    -ms-transform: translateX(-250px);
+    -o-transform: translateX(-250px);
+    transform: translateX(-250px);
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 230px;
+    height: auto;
+    float: left;
+    background-color: #eee;
+}
+
+.menu-slide-show {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.corp {
+    position: absolute;
+    -webkit-transition: 500ms;
+    -o-transition: 500ms;
+    transition: 500ms;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.corp-show {
+    -webkit-transform: translateX(250px);
+    -ms-transform: translateX(250px);
+    -o-transform: translateX(250px);
+    transform: translateX(250px);
+}
+
+#bird_logo{
+	background: rgba(225, 225, 225, .8);
+	width: 100px;
+	height: 170px;
+}
+
+

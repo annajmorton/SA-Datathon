@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Sudo{% endblock %}
+{% block head %}
+    {{ super() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock %}
+
+{% include "nav_top.html" %}
+
+{% block content %}
+    <div class="col">   
+    	<h1>sudo</h1>
+    </div>
+    <div class="col">
+	<p class="important">
+	    sudo page
+    	</p>
+    </div>
+{% endblock %}
