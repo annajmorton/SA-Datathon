@@ -17,7 +17,7 @@ import logging
 import os
 import socket
 
-from flask import Flask, request
+from flask import Flask, request, render_template
 from flask_sqlalchemy import SQLAlchemy
 import sqlalchemy
 
@@ -81,6 +81,22 @@ def index():
     return output, 200, {'Content-Type': 'text/plain; charset=utf-8'}
 # [END gae_flex_mysql_app]
 
+@app.route('/home')
+def home():
+    error = 'error, not used'
+    return render_template('home.html', error=error)
+
+
+@app.route('/sudo')
+def sudo():
+    error = 'error, not used'
+    return render_template('sudo.html', error=error)
+
+@app.route('/contact')
+def contact():
+    error = 'error, not used'
+    return render_template('contact.html', error=error)
+
 
 @app.errorhandler(500)
 def server_error(e):
@@ -95,3 +111,5 @@ if __name__ == '__main__':
     # This is used when running locally. Gunicorn is used to run the
     # application on Google App Engine. See entrypoint in app.yaml.
     app.run(host='127.0.0.1', port=8080, debug=True)
+
+
